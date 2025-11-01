@@ -1,0 +1,54 @@
+body{
+    background: linear-gradient(45deg, rgb(81, 151, 24), rgb(40, 150, 158), rgb(110, 51, 133), rgb(196, 223, 163), rgb(42, 52, 133),  rgb(192, 33, 33), rgb(42, 52, 133), rgb(196, 223, 163), rgb(110, 51, 133), rgb(40, 150, 158), rgb(81, 151, 24));
+    animation: gradientAnimation 180s infinite;
+    background-size: 600% 700%;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    /*50% {
+        background-position: 100% 50%;
+    }*/
+    100% {
+        background-position: 100% 50%;
+    }
+}
+dir{
+ display:flex;
+ align-items: center;
+ justify-content: center;
+  /*background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;*/
+}
+
+input{
+ border-radius: 30px;
+ background-color:rgb(106, 0, 255);
+ color:white;
+ margin:10px;
+ width: 100px;
+ height: 50px;
+}
+ input:hover{
+ animation:hover-twitch 0.5s infinite;
+}
+    @keyframes hover-twitch {
+        0%{
+    background-color:rgb(106, 0, 255);
+        }
+        50%{
+        background-color: rgb(153, 79, 255);
+        }
+        100%{
+        background-color: rgb(106, 0, 255);
+        }
+    }
