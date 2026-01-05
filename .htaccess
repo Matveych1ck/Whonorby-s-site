@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Убираем .html для всех страниц
+RewriteRule ^(.*)\.html$ /$1/ [R=301,L]
+
+# Убираем index.html с главной страницы и поддиректорий
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
