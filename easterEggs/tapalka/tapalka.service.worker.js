@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1768029081|247925950';
+const CACHE_VERSION = '1768231449|4930052834';
 /** @type {string} */
 const CACHE_PREFIX = 'tapalkaWhonorby-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
